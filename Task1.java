@@ -11,7 +11,7 @@ public class Task1 {
 
         try {
             Scanner console = new Scanner(System.in);
-            System.out.println("Введите Количество элементов массива: ");
+            System.out.println("Введите Количество элементов коллекции: ");
             n = console.nextInt();
             System.out.println("Введите элементы массива: ");
             ArrayList<Float> Alist = new ArrayList<>(n);
@@ -21,7 +21,7 @@ public class Task1 {
             System.out.println("Введите элемент который хотите заменить, нумерация начинается с 0: ");
             ent = console.nextInt();
             console.close();
-            System.out.print("Исходный массив: ");
+            System.out.print("Исходная коллекция: ");
             System.out.println(Alist);
             System.out.println();
             for (int g = 0; g < ent; g++) {
@@ -32,10 +32,10 @@ public class Task1 {
             Alistredo.addAll(Alist);
             if ((ent <= n) & (ent > 0)) {
                 Alistredo.set(ent, sum);
-                System.out.print("Итоговый массив: ");
+                System.out.print("Итоговая коллекция: ");
                 System.out.println(Alistredo);
             } else {
-                System.out.println("Введён элемент не соответветсвующий диапазону массива или была произведена попытка замены первого элемента.");
+                System.out.println("Введён элемент не соответветсвующий диапазону коллекции или была произведена попытка замены первого элемента.");
             }
         } catch (InputMismatchException e) {
             System.out.println("Ошибка ввода данных, попробуйте ещё раз предварительно перезапустив программу.");
